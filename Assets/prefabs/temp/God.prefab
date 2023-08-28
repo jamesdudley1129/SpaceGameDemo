@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2230894739521941415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2230894739521941414}
+  - component: {fileID: 2230894739521941410}
+  - component: {fileID: 2230894739521941411}
+  - component: {fileID: 2230894739521941408}
+  - component: {fileID: 2230894739521941409}
+  m_Layer: 8
+  m_Name: God
+  m_TagString: nonPlayer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2230894739521941414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2230894739521941415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2230894739521941410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2230894739521941415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102647fd88ad8a04dbb5407480b9ad90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Assets:
+  - {fileID: 1594926498107662461, guid: af16f57a197c623479d5a60058697e3d, type: 3}
+  isHost: 0
+  target: {fileID: 0}
+  MaxNumberOfNuturals: 10
+  MaxNumberOfHostiles: 5
+  _MinMax_SpawnRadius:
+  - 90
+  - 150
+  _MinMax_Velocity:
+  - 2
+  - 4
+  _MinMax_size:
+  - 0.1
+  - 2
+  _MinMax_mass:
+  - 1
+  - 60
+--- !u!114 &2230894739521941411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2230894739521941415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88c35512755fd964ebf2098043774b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldTracker: {fileID: 0}
+--- !u!114 &2230894739521941408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2230894739521941415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a5386ecfdc21d4d8ca2d8c6aad9038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentID: 
+  netID: 
+  worldPos: {x: 0, y: 0, z: 0}
+  worldRot: {x: 0, y: 0, z: 0}
+  Asset: {fileID: 2230894739521941415}
+  prefab: 
+  AttachmentNodes: []
+  NodeIDs: []
+--- !u!114 &2230894739521941409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2230894739521941415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aa445d2e8140ac4e82fac9592ebc1e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfinateHP: 1
+  HP: 1000000
+  Shield: 0
+  MaxHP: 100000
+  MaxShield: 0
+  RelationStatus: 0
+  detectable_onRadar: 0
+  faction: 
